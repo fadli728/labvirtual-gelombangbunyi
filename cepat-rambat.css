@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding: 5px 0;
+    background-color: #178196;
+}
+.medsos ul li {
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header h1{
+    float: left;
+    padding: 15px 0px;
+    color: #178196;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    padding: 25px 5px;
+    display: inline-block;
+    font-size: 10pt;
+}
+header ul li a:hover{
+    background-color: #178196;
+    color: white;
+}
+.active{
+    background-color: #178196;
+    color: white;
+}
+.banner{
+    height: 20vh;
+    background-image: url("../baner.gif");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner h2{
+    position: absolute;
+    z-index: 1;
+    font-family: Lucida Handwriting;
+    font-size: 6vh;
+    color: rgb(239, 255, 59);
+    width: max-content;
+    text-align: center;
+}
+.unram{
+    height: 15vh;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    align-self: flex-start;
+}
+.kemendikbud{
+    height: 15vh;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    align-self: flex-end;
+}
+
+#canvas{
+    background-color: lightblue;
+}
+
+.besaran{
+    background-color: rgb(124, 224, 221);
+    padding: 20px 20px 20px 20px;
+    margin-top: 0px;
+    width: 1203px;
+    border: solid black 1px;
+}
+.padatcair{
+    font-size: 16pt;
+    padding-inline-end: 100px;
+    padding-inline-start: 10px;
+    display: inline-table;
+}
+.gas{
+    font-size: 16pt;
+    padding-inline-end: 100px;
+    padding-inline-start: 10px;
+    display: inline-table;
+}
+.medium{
+    font-size: 16pt;
+    padding-inline-end: 100px;
+    padding-inline-start: 10px;
+    display: inline-table;
+}
+#sliderP, #sliderE, #sliderB, #sliderK, #sliderM, #sliderT{
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: text;
+    padding: 5px;
+}
+#medium1{
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+input{
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#start{
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    background-color: coral;
+}
+.header1{
+    font-size: 23px;
+    font-weight: bold;
+    color: brown;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+  
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+  
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+  
+.modal-header {
+    z-index: 1;
+    color: black;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+  
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+  
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+  
+.modal-body {
+    z-index: 1;
+    color: black;
+    padding: 10px 30px 10px 30px;
+}
+  .modal-body-1{
+    z-index: 1;
+    color: black;
+    padding: 5px 30px 5px 30px;
+}
+  
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+#petunjuk{
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    background-color: coral;
+}

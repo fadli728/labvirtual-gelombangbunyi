@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efek Dopler</title>
+    <link rel="stylesheet" href="dopler-praktikum.css">
+</head>
+<body>
+
+    <!--Header-->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100083311877463" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/laboratorium_virtual/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://youtube.com/channel/UCmst8-hffyPENECBoOOW9eA" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1><a href="index.html">LABORATORIUM VIRTUAL</a></h1>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="materi.html">MATERI</a></li>
+                <li><a href="simulasi.html">SIMULASI</a></li>
+                <li><a class="active" href="praktikum.html">PRAKTIKUM</a></li>
+                <li><a href="https://forms.gle/FuMxF2ucwtMoTLMi9" target="_blank">EVALUASI</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Banner-->
+    <section class="banner">
+        <img class="unram" src="unram.png"></img>
+        <img class="kemendikbud" src="kemendikbud.png"></img>
+        <!--header 1-->
+        <h2>EFEK DOPPLER</h2>
+    </section>
+
+    <canvas id="canvas" width="1200" height="600" style="border: solid 1px"></canvas><p>
+    <div class="blok">
+    <!--tombol-->
+    <div class="tombol">
+        <input type="button" id="start" value="Start"></input>
+        <button id="petunjuk" data-modal-target="#modal">Petunjuk Simulasi</button>
+        <a id="lkpd" href="LKPD2.html" target="_blank" class="menu">LKS</a>
+    </div>
+    <!--besaran sumber-->
+    <div class="sumber">
+        <p>Posisi Mobil Sumber: <span id="nilaiSsumber"></span> (m)</p>
+        <input type="range" min="0" max="1120" value=50 step="10" id="posisiSumber"></input>
+        <p>Kecepatan Mobil Sumber: <span id="nilaiVsumber"></span> (m/s)</p>
+        <input type="range" min="0" max="30" value=10 id="kecepatanSumber"></input>
+        <p>Frekuensi Mobil Sumber: <span id="nilaiF"></span> (Hz)</p>
+        <input type="range" min="0" max="1000" value=400 step="20" id="frekuensiSumber"></input>
+    </div>
+        
+    <!--besaran pendegar-->
+    <div class="pendengar">
+        <p>Posisi Mobil Pendengar: <span id="nilaiSpendengar"></span> (m)</p>
+        <input type="range" min="0" max="1120" value=50 step="10" id="posisiPendengar"></input>
+        <p>Kecepatan Mobil Pendengar: <span id="nilaiVpendengar"></span> (m/s)</p>
+        <input type="range" min="0" max="30" value=10 id="kecepatanPendengar"></input>
+    </div>
+    </div>
+    
+    <!--popup petunjuk-->
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Petunjuk Simulasi Efek Doppler</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <ol type="1">
+                <li>Silahkan atur besaran pada mobil sumber bunyi</li>
+                    <div class="modal-body-1">
+                    <ol type="a">
+                        <li>Atur posisi mobil sumber bunyi pada slider <b>Posisi Mobil Sumber</b> untuk mengatur posisi mobil sumber berada sebelum atau setelah mobil pendengar.</li>
+                        <li>Atur kecepatan mobil sumber bunyi pada slider <b>Kecepatan Mobil Sumber</b> untuk mengatur kecepatan mobil sumber bunyi.</li>
+                        <li>Atur besar frekuensi bunyi mobil sumber pada slider <b>Freuensi Mobil Sumber</b>.</li>
+                    </ol>
+                    </div>
+                    <li>Silahkan atur besaran pada mobil pendengar bunyi</li>
+                    <div class="modal-body-1">
+                    <ol type="a">
+                        <li>Atur posisi mobil pendengar bunyi pada slider <b>Posisi Mobil Pendengar</b> untuk mengatur posisi mobil pendengar berada sebelum atau setelah mobil sumber.</li>
+                        <li>Atur kecepatan mobil pendengar bunyi pada slider <b>Kecepatan Mobil Pendengar</b> untuk mengatur kecepatan mobil pendengar bunyi.</li>
+                    </ol>
+                    </div>
+                <li>Jika anda sudah mengatur nilai besaran-besarannya, silahkan klik start untuk memulai simulasi.</li>
+                <li>Jika anda ingin merubah nilai besaran-besarannya maka silahkan klik stop.</li>
+                <li>Anda dapat melihat nilai frekuensi yang didengar mobil pendengar pada bagian atas simulasi.</li>
+            </ol>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <script src="dopler-praktikum.js"></script>
+</body>
+</html>

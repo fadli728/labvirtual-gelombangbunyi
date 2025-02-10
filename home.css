@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding: 5px 0;
+    background-color: #178196;
+}
+.medsos ul li {
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header h1{
+    float: left;
+    padding: 15px 0px;
+    color: #178196;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    padding: 25px 5px;
+    display: inline-block;
+    font-size: 10pt;
+}
+header ul li a:hover{
+    background-color: #178196;
+    color: white;
+}
+.active{
+    background-color: #178196;
+    color: white;
+}
+.banner{
+    height: 90vh;
+    background-image: url("../baner.gif");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner h2{
+    position: absolute;
+    z-index: 1;
+    font-family: Lucida Handwriting;
+    font-size: 6vh;
+    color: rgb(239, 255, 59);
+    width: max-content;
+    text-align: center;
+    margin-top: -50vh;
+}
+.banner:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(23, 129, 150, 0.7);
+}
+.unram{
+    height: 15vh;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    align-self: flex-start;
+}
+.kemendikbud{
+    height: 15vh;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    align-self: flex-end;
+}
+.kelelawar{
+    height: 30vh;
+    z-index: 1;
+    top: 63vh;
+    position: absolute;
+    align-self: flex-start;
+}
+.ambulan{
+    height: 30vh;
+    z-index: 1;
+    top: 65vh;
+    position: absolute;
+    align-self: flex-end;
+}
+.tombol1{
+    width: 40vh;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 6vh;
+    padding: 5px 5px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10vh;
+    margin-right: 50vh;
+}
+.tombol2{
+    width: 40vh;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 6vh;
+    padding: 5px 5px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 40vh;
+    margin-right: 50vh;
+}
+.tombol3{
+    width: 40vh;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 6vh;
+    padding: 5px 5px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10vh;
+    margin-left: 50vh;
+}
+.tombol4{
+    width: 40vh;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 6vh;
+    padding: 5px 5px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 40vh;
+    margin-left: 50vh;
+}
+.tombol1:hover{
+    background-color: #178196;
+    color: white;
+    border: 1px solid black;
+}
+.tombol2:hover{
+    background-color: #178196;
+    color: white;
+    border: 1px solid black;
+}
+.tombol3:hover{
+    background-color: #178196;
+    color: white;
+    border: 1px solid black;
+}
+.tombol4:hover{
+    background-color: #178196;
+    color: white;
+    border: 1px solid black;
+}
+.active{
+    background-color: #178196;
+    color: white;
+}

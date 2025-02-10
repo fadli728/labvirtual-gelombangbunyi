@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cepat Rambat Gelombang Bunyi</title>
+    <link rel="stylesheet" href="cepat-rambat.css">
+</head>
+<body>
+    <!--Header-->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100083311877463" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/laboratorium_virtual/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://youtube.com/channel/UCmst8-hffyPENECBoOOW9eA" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1><a href="index.html">LABORATORIUM VIRTUAL</a></h1>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="materi.html">MATERI</a></li>
+                <li><a class="active" href="simulasi.html">SIMULASI</a></li>
+                <li><a href="praktikum.html">PRAKTIKUM</a></li>
+                <li><a href="https://forms.gle/FuMxF2ucwtMoTLMi9" target="_blank">EVALUASI</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Banner-->
+    <section class="banner">
+        <img class="unram" src="unram.png"></img>
+        <img class="kemendikbud" src="kemendikbud.png"></img>
+        <!--header 1-->
+        <h2>CEPAT RAMBAT<br>GELOMBANG BUNYI</h2>
+    </section>
+
+    <canvas id="canvas" width="1200" height="500" style="border: solid 1px"></canvas>
+    <div class="besaran">
+    <!--besaran pada dan cair-->
+    <div class="padatcair">
+        <p class="header1">Besaran Medium Padat dan Cair</p>
+        <p>Massa Jenis: <span id="nilaiP"></span> (kg/m<sup>3</sup>)</p>
+        <input type="number" min="0" max="20000" value=2700 step="10" id="sliderP"></input>
+        <p>Modulus Young: <span id="nilaiE"></span> x 10<sup>9</sup> (N/m<sup>2</sup>)</p>
+        <input type="number" min="0" max="120" value=68 step="10" id="sliderE"></input>
+        <p>Modulus Bulk: <span id="nilaiB"></span> x 10<sup>9</sup> (Pa)</p>
+        <input type="number" min="0" max="10" value=20 step="0.1" id="sliderB"></input>
+    </div>
+    <!--besaran gas-->
+    <div class="gas">
+        <p class="header1">Besaran Medium Gas</p>
+        <p>Konstanta Laplace: <span id="nilaiK"></span></p>
+        <input type="number" min="0" max="2" value=2 step="0.01" id="sliderK"></input>
+        <p>Massa Molar: <span id="nilaiM"></span> (gr/mol)</p>
+        <input type="number" min="0" max="200" value=32 id="sliderM"></input>
+        <p>Suhu Gas: <span id="nilaiT"></span> (K)</p>
+        <input type="number" min="0" max="500" value=273 id="sliderT"></input>
+    </div>
+    <!--Opsi memilih medium rambat-->
+    <div class="medium">
+        <div><label>Medium</label></div>
+        <div>
+        <select onChange="setAwal()" id="medium1">
+            <option value="padat">Padat</option>
+            <option value="cair">Cair</option>
+            <option value="gas">Gas</option>
+        </select>
+    </div>
+    <!--tombol-->
+    <p><input type="button" id="start" value="Start"></input></p>
+    <p><button id="petunjuk" data-modal-target="#modal">Petunjuk Simulasi</button></p>
+    </div>
+    </div>
+    
+    <!--popup petunjuk-->
+    
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Petunjuk Simulasi Cepat Rambat</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+    <div class="modal-body">
+        <ol type="1">
+            <li>Silahkan pilih medium rambat yang anda inginkan.</li>
+            <ol type="a">
+                <div class="modal-body-1">
+                    <li>Jika anda memilih <b>Medium Padat</b> maka aturlah <b>Massa Jenis</b> dan <b>Modulus Young</b> sesuai dengan medium padat yang anda inginkan. Silahkan lihat pada tabel <b>Medium Padat</b> disamping kanan simulasi.</li>
+                    <li>Jika anda memilih <b>Medium Cair</b> maka aturlah <b>Massa Jenis</b> dan <b>Modulus Bulk</b> sesuai dengan medium cair yang anda inginkan. Silahkan lihat pada tabel <b>Medium Cair</b> disamping kanan simulasi.</li>
+                    <li>Jika anda memilih <b>Medium Gas</b> aturlah <b>Konstanta Laplace</b>, <b>Massa Molar</b> dan <b>Suhu Gas</b> sesuai dengan medium gas yang anda inginkan. Silahkan lihat pada tabel <b>Medium Gas</b> disamping kanan simulasi.</li>
+                </div>
+            </ol>
+            <li>Jika anda sudah memilih medium dan mengatur nilai besaran-besarannya, silahkan klik start untuk memulai simulasi.</li>
+            <li>Jika anda ingin merubah medium atau nilai besaran-besarannya maka silahkan klik stop.</li>
+            <li>Anda dapat melihat nilai cepat rambat bunyi pada bagian atas simulasi.</li>
+        </ol>
+    </div>
+    </div>
+    <div id="overlay"></div>
+    
+    <script src="cepat-rambat.js"></script>
+
+</body>
+</html>

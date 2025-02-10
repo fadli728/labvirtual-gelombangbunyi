@@ -1,0 +1,74 @@
+*{
+    text-decoration: none;
+}
+
+body{
+
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2{
+    text-align: center;
+    font-family: 'Times New Roman';
+}
+.wrapper{
+    width: 1100px;
+    font-size: 14pt;
+}
+p, li{
+    font-size: 14pt;
+    font-family: 'Times New Roman';
+}
+img{
+    width: 50%;
+    height: 50%;
+    padding-top: 25px;
+}
+.rumus{
+    width: 30%;
+    height: 30%;
+}
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.kolom{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+.kolom .deskripsi{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    color: teal;
+    text-align: justify;
+}
+#diskusi{
+    width: 800px;
+    height: 300px;
+    text-align: left;
+    font-family: 'Times New Roman';
+    font-size: 14pt;
+}
+#deskripsi{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    color: teal;
+    text-align: center;
+}
+table, input, button{
+    font-family: 'Times New Roman';
+    font-size: 14pt;
+}
+input{
+    width: 100%;
+}

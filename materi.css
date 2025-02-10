@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.medsos {
+    padding: 5px 0;
+    background-color: #178196;
+}
+.medsos ul li {
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header h1{
+    float: left;
+    padding: 15px 0px;
+    color: #178196;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    padding: 25px 5px;
+    display: inline-block;
+    font-size: 10pt;
+}
+header ul li a:hover{
+    background-color: #178196;
+    color: white;
+}
+.active{
+    background-color: #178196;
+    color: white;
+}
+.banner{
+    height: 20vh;
+    background-image: url("../baner.gif");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.banner h2{
+    position: absolute;
+    z-index: 1;
+    font-family: Lucida Handwriting;
+    font-size: 6vh;
+    color: rgb(239, 255, 59);
+    width: max-content;
+    text-align: center;
+    margin-top: 8vh;
+}
+.unram{
+    height: 15vh;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    align-self: flex-start;
+}
+.kemendikbud{
+    height: 15vh;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    align-self: flex-end;
+}
+table{
+    margin: 2rem 2rem;
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px;
+}
+th{
+    box-shadow: 0 5px 5px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+td{
+    padding: 1rem 2rem;
+}
+hr{
+    margin: 0.5rem 0;
+}
+summary{
+    padding: 1rem 1rem;
+    background: turquoise;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+summary:hover{
+    background: rgb(21, 126, 115);
+}
+.materi{
+    padding: 0 2rem;
+}
+details[open] summary ~ * {
+    animation: sweep 0.5s ease-in-out;
+}
+@keyframes sweep {
+    from{
+        opacity: 0; margin-top: -10px;
+    }
+    to{
+        opacity: 1; margin-top: 0;
+    }
+}
+#vakum, #dawaiimg, #efekdopler, #cepatrambatimg, #padatimg, #cairimg, #gasimg, #doplerimg, #gitarimg{
+    height: 50vh;
+}
+#dawai1img{
+    width: 40vh;
+}
+td p{
+    width: 30vh;
+}
+h3{
+    padding-top: 2rem;
+}
+p{
+    margin-top: 2rem;
+    text-align: justify;
+    width: 100vh;
+}
+.frekuensi li{
+    text-align: justify;
+    width: 100vh;
+}
+#padatimg1{
+    width: 350px;
+}
